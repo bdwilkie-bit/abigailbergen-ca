@@ -1,16 +1,19 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>The Abigail Bergen Website!</title>
   <meta name="description" content="The website for Abigail Bergen from Alberta. Are you her? This has been waiting for you.">
+
+  <meta property="og:title" content="The Abigail Bergen Website!">
+  <meta property="og:description" content="The website for Abigail Bergen from Alberta. Are you her? This has been waiting for you.">
   <meta property="og:image" content="https://abigailbergen.ca/agb.jpg">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
   <meta name="robots" content="index, follow, max-image-preview:large">
-  
+
   <!-- Cloudflare Web Analytics -->
   <script defer src="https://static.cloudflareinsights.com/beacon.min.js"
     data-cf-beacon='{"token": "9826ffd85a87423e8ea213b425f9d139"}'></script>
@@ -66,24 +69,38 @@
       font-size: 1.5rem;
       font-weight: bold;
     }
+
+    .preview-image {
+      max-width: 320px;
+      width: 100%;
+      height: auto;
+      margin: 20px auto 0;
+      display: block;
+    }
   </style>
 </head>
 
 <body>
   <div class="page">
     <h1>The Abigail Bergen Website!</h1>
-    <p class="subtitle">A site dedicated to the incredible and fascinating heritage of Abigail Bergen of Beaumont, Alberta</p>
+
+    <p class="subtitle">
+      A site dedicated to the incredible and fascinating heritage of Abigail Bergen of Beaumont, Alberta
+    </p>
 
     <div class="video-wrap">
       <div id="player"></div>
     </div>
 
     <div class="curator">A message from the curator</div>
+
+    <img src="/agb.jpg" alt="The Abigail Bergen Website preview image" class="preview-image">
   </div>
 
   <script>
     var tag = document.createElement("script");
     tag.src = "https://www.youtube.com/iframe_api";
+
     var firstScriptTag = document.getElementsByTagName("script")[0];
     firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 
@@ -110,4 +127,3 @@
   </script>
 </body>
 </html>
-```
